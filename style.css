@@ -8,38 +8,51 @@ body {
     margin-top: 0;
 }
 
+p, ul, ol {
+    font-family: 'opensans', sans-serif;
+}
+
+ul, ol {
+    margin-bottom: 24px;   
+}
+
+li {
+    margin-bottom: 8px;
+}
+
 section {
     max-width: 1280px;
     background: #fcfcfc;
     align-items: center;
-    gap: 24px;
     padding-top: 48px;
     padding-right: 48px;
     padding-bottom: 64px;
     padding-left: 48px;
 }
 
-.rubrik {
-    font-family: 'opensans', sans-serif;
-    font-size: 28px;
+#huvudRubrik {
+    font-size: 28px;    
     color: #a10000;
-    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+ .rubrik {
+    font-size: 24px;    
+    font-weight: bold;
     line-height: 100%;
     letter-spacing: 0%;
     margin: 0;
+    margin-bottom: 16px;
 }
 
 .beskrivning {
-    font-family: 'opensans', sans-serif;
     background: #EBEBEB;
     font-weight: 400;
     font-size: 16px;
     padding: 16px;
-    gap: 10px;
     line-height: 100%;
-    letter-spacing: 0%;
     margin: 0;
-
+    margin-bottom: 24px;
 }
 
 .bigPic {
