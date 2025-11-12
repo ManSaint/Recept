@@ -1,9 +1,57 @@
-h1 {
-    color: rgb(154, 154, 226);
+body {
+    width: 2000px;
+    height: 1900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(161, 0, 0, 0.3);
+    margin-top: 0;
+}
+
+section {
+    max-width: 1280px;
+    background: #fcfcfc;
+    align-items: center;
+    gap: 24px;
+    padding-top: 48px;
+    padding-right: 48px;
+    padding-bottom: 64px;
+    padding-left: 48px;
+}
+
+.rubrik {
+    font-family: 'opensans', sans-serif;
+    font-size: 28px;
+    color: #a10000;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+}
+
+.beskrivning {
+    font-family: 'opensans', sans-serif;
+    background: #EBEBEB;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 16px;
+    gap: 10px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+
 }
 
 .bigPic {
     width: 1280px;
+    max-width: 1280px;
     border: 1px solid #fcfcfc;
     height: 500px;
+}
+
+.smallPic {
+    width: 640px;
+    max-width: 640px;
+    border: 1px solid #fcfcfc;
+    height: 250px;
 }
