@@ -12,6 +12,7 @@ section {
     background: #fcfcfc;
     align-items: center;
     padding: 48px 48px 64px 48px;
+    margin-bottom: 64px;
     border: #fcfcfc solid 1px;
 }
 
@@ -23,17 +24,18 @@ li {
     margin-bottom: 8px;
 }
 
-.huvudRubrik {
+.mainHeading {
     color: #a10000;
+    margin-top: 0;
     margin-bottom: 24px;
 }
 
-.underRubrik {
+.subHeading {
     margin: 0;
     margin-bottom: 16px;
 }
 
-.beskrivning {
+.description {
     background: #EBEBEB;
     font-weight: 400;
     font-size: 16px;
@@ -58,7 +60,7 @@ li {
     gap: 24px;
 }
 
-.smallPicsArticle figure {
+.smallPicsArticle figure{
     margin: 0;
 }
 
