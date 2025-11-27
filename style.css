@@ -6,6 +6,18 @@ body {
     margin-top: 0;
 }
 
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 0;
+  top: 0;
+  background: #fff;
+  padding: 8px 8px;
+}
+
 section {
     font-family: 'opensans', sans-serif;
     max-width: 1280px;
