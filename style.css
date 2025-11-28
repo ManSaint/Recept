@@ -18,7 +18,7 @@ body {
   padding: 8px 8px;
 }
 
-section {
+article {
     font-family: 'opensans', sans-serif;
     max-width: 1280px;
     background: #fcfcfc;
@@ -67,13 +67,15 @@ li {
 
 }
 
-.smallPicsArticle {
+.smallPicsSection figure{
     display: flex;
+    flex-wrap: wrap;
+    margin: 0;
     gap: 24px;
 }
 
-.smallPicsArticle figure{
-    margin: 0;
+figcaption {
+    flex-basis: 100%;
 }
 
 .smallPic {
