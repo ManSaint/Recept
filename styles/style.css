@@ -1,0 +1,122 @@
+:root {
+    --h1-color: #a10000;
+    --background-color-pink: #a100004d;
+    --background-color-white: #fcfcfc;
+    --description-grey: #EBEBEB;
+
+    --max-width: 1280px;
+}
+
+body {
+    background: var(--background-color-pink);
+    font-family: 'opensans', sans-serif;
+    margin: 0;
+}
+
+.navbar-top ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: var(--max-width);
+    background: var(--background-color-white);
+    padding-block: 5px;
+    padding-inline: 50px;
+    margin: 0 auto;
+    gap: 2rem;
+    list-style: none;
+    
+    .navbar-logo img{
+        width: 70px;
+    }
+
+    > .navbar-links {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .navbar-item a {
+        text-decoration: none;
+    }
+
+    .navbar-login a {
+        background-color: var(--h1-color);
+        color: var(--background-color-white);
+        font-weight: bold;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+}
+
+.main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+
+  &:focus {
+    left: 0;
+    top: 0;
+    background: var(--background-color-white);
+    padding: 8px 8px;
+  }
+}
+
+.hero {
+    width: 100%;
+    border: 1px solid var(--background-color-white);
+    border-block-start: none;
+    height: 500px;
+    object-fit: cover;
+}
+
+article {
+    background: var(--background-color-white);
+    padding-block: 48px 64px;
+    padding-inline: 48px 48px;
+    margin-block-end: 64px;
+    border: var(--background-color-white) solid 1px;
+}
+
+ul, ol {
+    margin-bottom: 24px;   
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+h1 {
+    color: var(--h1-color);
+    margin-block-end: 24px;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.description {
+    background: var(--description-grey);
+    padding: 16px;
+    margin-block-end: 24px;
+}
+
+figure{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 22px;
+    row-gap: 4px;
+    
+    > .serving-img {
+        width: 580px;
+        min-width: 300px;
+        height: 467px;
+        object-fit: cover;
+    }
+}
