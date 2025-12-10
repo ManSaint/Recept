@@ -52,7 +52,7 @@ h2 {
   max-width: var(--max-width);
   background: var(--background-clr-white);
   padding-block: 0.5rem;
-  padding-inline: 1rem;
+  padding-inline: 48px;
   margin: 0 auto;
   gap: 2rem;
   list-style: none;

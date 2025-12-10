@@ -4,20 +4,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enkelt recept på pannkakor</title>
+  <title>Pannkaksrecepten - Din guide till perfekta pannkakor</title>
   <link rel="stylesheet" href="/styles/reset.css" />
   <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/landing.css" />
 </head>
 
 <body>
-  
+
   <a href="#main" class="skip-link">Hoppa till innehåll</a>
 
   <header>
     <nav class="navbar-top" aria-label="Huvudmeny">
       <ul>
         <li class="navbar-logo">
-          <a href="/hem.html"></a><img src="/pics/Pancake-logo.avif" alt="" />
+          <a href="/index.html"><img src="/pics/Pancake-logo.avif" alt="Logotyp" /></a>
         </li>
         <div class="navbar-links">
           <li class="navbar-item"><a href="/recept.html">Recept</a></li>
@@ -29,54 +30,45 @@
     </nav>
   </header>
 
-  <main class="main">
-    
-    <img src="/pics/pic1.jpg" class="hero" alt="Pannkaka med hallon" />
+  <main id="main" class="main">
+
+    <section class="hero-section">
+      <img src="/pics/pic1.jpg" class="hero" alt="Läckra pannkakor" />
+      <div class="hero-content">
+        <h1>Välkommen till Pannkaksrecepten</h1>
+        <p>Din ultimata guide till perfekta pannkakor</p>
+        <a href="/recept.html" class="cta-button">Utforska recept</a>
+      </div>
+    </section>
 
     <article>
-      <h1>Enkelt recept på pannkakor</h1>
-      <p class="description">
-        Gör traditionella tunna pannkakor med detta enkla och goda
-        pannkaksrecept.
-      </p>
-
-      <section aria-labelledby="ingredients">
-        <h2>Ingredienser</h2>
-        <p>För 4 portioner</p>
-        <ul>
-          <li>2 1/2 dl vetemjöl</li>
-          <li>1/2 krm salt</li>
-          <li>6 dl mjölk</li>
-          <li>3 ägg</li>
-          <li>Smör (till stekning)</li>
-          <li>Sylt, bär eller frukt till servering</li>
-        </ul>
+      <section class="intro">
+        <h2>Upptäck pannkakornas värld</h2>
+        <p>Hos oss hittar du allt från klassiska svenska pannkakor till spännande varianter med olika fyllningar och toppings. Oavsett om du är nybörjare eller erfaren i köket har vi recept för dig.</p>
       </section>
 
-      <section aria-labelledby="instructions">
-        <h2>Så här gör du</h2>
-        <ol>
-          <li>Blanda mjöl och salt i en bunke.</li>
-          <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-          <li>Vispa i resten av mjölken och äggen.</li>
-          <li>Låt smeten vila ca 10 minuter.</li>
-          <li>
-            Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
-            eller pannkakspanna.
-          </li>
-          <li>Servera med sylt, bär eller frukt</li>
-        </ol>
+      <section class="features">
+        <div class="feature-card">
+          <h3>Enkla recept</h3>
+          <p>Steg-för-steg instruktioner som gör det lätt att lyckas varje gång.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Variation</h3>
+          <p>Från klassiska till moderna - hitta din nya favoritpannkaka.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Tips & tricks</h3>
+          <p>Lär dig hemligheterna bakom de perfekta pannkakorna.</p>
+        </div>
       </section>
 
-      <section aria-labelledby="serving">
-        <h2>Serveringsförslag</h2>
-        <figure>
-          <img src="/pics/pic2.jpg" class="serving-img" alt="Pannkaka med citron" />
-          <img src="/pics/pic3.jpg" class="serving-img" alt="Pannkaka med apelsin" />
-          <figcaption>Serveringsförslag för pannkakor</figcaption>
-        </figure>
+      <section class="cta-section">
+        <h2>Redo att börja laga?</h2>
+        <p>Bläddra bland våra recept och hitta din nästa favorit.</p>
+        <a href="/recept.html" class="cta-button">Se alla recept</a>
       </section>
     </article>
+
   </main>
 </body>
 
