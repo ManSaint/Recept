@@ -51,14 +51,13 @@ h2 {
   align-items: center;
   max-width: var(--max-width);
   background: var(--background-clr-white);
-  padding-block: 0.5rem;
   padding-inline: 48px;
   margin: 0 auto;
   gap: 2rem;
   list-style: none;
 
   .navbar-logo img {
-    width: 70px;
+    width: 60px;
   }
 
   .navbar-links {
@@ -69,6 +68,10 @@ h2 {
 
     .navbar-item a {
         text-decoration: none;
+    }
+
+    .navbar-item:hover a {
+        text-decoration: underline solid 0.1rem;
     }
   }
 
@@ -94,8 +97,6 @@ h2 {
 
 .hero {
   width: 100%;
-  border: 1px solid var(--background-clr-white);
-  border-block-start: none;
   height: 500px;
   object-fit: cover;
 }

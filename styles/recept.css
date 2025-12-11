@@ -20,6 +20,7 @@ a.card {
     box-shadow: #ccc 0px 4px 8px;
     text-decoration: none;
     color: inherit;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
 
     > img {
         width: 100%;
@@ -29,5 +30,10 @@ a.card {
     
     > .card-text {
         padding: 1rem;
+    }
+
+    &:hover {
+        box-shadow: var(--login-brown) 0px 6px 12px;
+        transform: translateY(-3px);
     }
 }
