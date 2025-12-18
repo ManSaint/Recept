@@ -1,8 +1,10 @@
 :root {
-  --h1-color: #a10000;
-  --background-clr-pink: #a100004d;
+  --brand-red: #a10000;
+  --background-clr-pink: #a300004d;
+  --background-clr-light-pink: #fff7f7;
+  --background-clr-medium-pink: #fae7e7;
   --background-clr-white: #fcfcfc;
-  --description-grey: #ebebeb;
+  --border-grey: #ebebeb;
   --login-brown: #3d2315;
 
   --max-width: 1280px;
@@ -24,7 +26,7 @@ ol {
 }
 
 h1 {
-  color: var(--h1-color);
+  color: var(--brand-red);
   margin-block-end: 1.5rem;
 }
 
@@ -55,6 +57,7 @@ h2 {
   margin: 0 auto;
   gap: 2rem;
   list-style: none;
+  flex-wrap: wrap;
 
   .navbar-logo img {
     width: 60px;
@@ -86,7 +89,7 @@ h2 {
     font-weight: bold;
     padding: 8px 16px;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
   }
 }
 
@@ -110,7 +113,7 @@ article {
 }
 
 .description {
-  background: var(--description-grey);
+  background: var(--border-grey);
   padding: 1rem;
   margin-block-end: 1.5rem;
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/style.css" />
     <link rel="stylesheet" href="/styles/recept.css" />
+    <link rel="stylesheet" href="/styles/kontakt.css" />
   </head>
 
   <body>
@@ -21,7 +22,7 @@
           <div class="navbar-links">
             <li class="navbar-item"><a href="/recept.html">Recept</a></li>
             <li class="navbar-item"><a href="/om-oss.html">Om oss</a></li>
-            <li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+            <li class="navbar-item"><a href="#" onclick="document.getElementById('viewModal').showModal(); return false">Kontakt</a></li>
           </div>
           <li class="navbar-login"><a href="/logga-in.html">Logga in</a></li>
         </ul>
@@ -86,5 +87,110 @@
         </a>
       </article>
     </main>
+  <dialog class="dialog" id="viewModal">
+    <div class="modal-top">
+      <h2>Hoteyhoo</h2>
+      <button
+        type="button"
+        onclick="document.getElementById('viewModal').close()"
+        aria-label="Stäng"
+      >
+        X
+      </button>
+    </div>
+      <form action="#" method="POST" class="form">
+        <label>
+          Namn
+          <input
+            class="input-width"
+            type="text"
+            name="name"
+            placeholder="Namn"
+            autocomplete="name"
+            required
+          />
+        </label>
+
+        <label>
+        E-post
+          <input
+            class="input-width"
+            type="email"
+            name="email"
+            placeholder="E-post"
+            autocomplete="email"
+            required
+          />
+        </label>
+
+        <label>
+            Datum
+            <input class="input-width" type="date" name="visit-date" />
+        </label>
+
+        <label>
+          Typ av mat
+          <select class="input-width" name="foodType">
+            <option value="" disabled selected>Välj...</option>
+            <option value="grilled">Grillat</option>
+            <option value="vegetarian">Vegetariskt</option>
+            <option value="thai">Thai</option>
+            <option value="sushi">Sushi</option>
+            <option value="lchf">LCHF</option>
+            <option value="seafood">Skaldjur</option>
+          </select>
+        </label>
+
+        <label>
+            Hur många gäster?
+            <input class="input-width" type="range" name="guests" min="0" max="10" list="nr-guests">
+            </input>
+
+            <datalist id="nr-guests">
+                <option value="0">0</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </datalist>
+        </label>
+
+        <fieldset class="fieldset">
+            <legend>Allergier</legend>
+            <label>
+                <input type="checkbox" name="">
+                Gluten
+            </label>
+
+            <label>
+                <input type="checkbox" name="">
+                Nötter
+            </label>
+
+            <label>
+                <input type="checkbox" name="">
+                Laktos
+            </label>
+
+            <label>
+                <input type="checkbox" name="">
+                Ägg
+            </label>
+            
+            <label>
+                <input type="checkbox" name="">
+                Soja
+            </label>
+        </fieldset>
+
+        <label>
+          Övrigt
+          <textarea class="input-width" id="general" name="general" rows="4"></textarea>
+        </label>
+
+        <button type="submit">Skicka</button>
+      </form>
+    </dialog>
   </body>
 </html>

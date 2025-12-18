@@ -30,7 +30,7 @@
 
 .cta-button {
   display: inline-block;
-  background: var(--h1-color);
+  background: var(--brand-red);
   color: var(--background-clr-white);
   padding: 1rem 2rem;
   text-decoration: none;
@@ -67,14 +67,14 @@
 }
 
 .feature-card {
-  background: var(--description-grey);
+  background: var(--border-grey);
   padding: 2rem;
   border-radius: 8px;
   text-align: center;
 }
 
 .feature-card h3 {
-  color: var(--h1-color);
+  color: var(--brand-red);
   margin-bottom: 1rem;
 }
 

@@ -7,6 +7,7 @@
   <title>Enkelt recept på pannkakor</title>
   <link rel="stylesheet" href="/styles/reset.css" />
   <link rel="stylesheet" href="/styles/style.css" />
+  <link rel="stylesheet" href="/styles/kontakt.css" />
 </head>
 
 <body>
@@ -17,12 +18,12 @@
     <nav class="navbar-top" aria-label="Huvudmeny">
       <ul>
         <li class="navbar-logo">
-          <a href="/hem.html"></a><img src="/pics/Pancake-logo.avif" alt="" />
+          <a href="/index.html"><img src="/pics/Pancake-logo.avif" alt="" /></a>
         </li>
         <div class="navbar-links">
           <li class="navbar-item"><a href="/recept.html">Recept</a></li>
           <li class="navbar-item"><a href="/om-oss.html">Om oss</a></li>
-          <li class="navbar-item"><a href="/kontakt.html">Kontakt</a></li>
+          <li class="navbar-item"><a href="#" onclick="document.getElementById('viewModal').showModal(); return false">Kontakt</a></li>
         </div>
         <li class="navbar-login"><a href="/logga-in.html">Logga in</a></li>
       </ul>
@@ -78,6 +79,114 @@
       </section>
     </article>
   </main>
+  <dialog id="viewModal">
+      <h2>Hoteyhoo</h2>
+      <button
+        type="button"
+        onclick="document.getElementById('viewModal').close()"
+        aria-label="Stäng"
+      >
+        X
+      </button>
+
+      <form action="#" method="POST">
+        <label>
+          Namn
+          <input
+            type="text"
+            name="name"
+            placeholder="Namn"
+            autocomplete="name"
+            required
+          />
+        </label>
+
+        <label>
+          E-post
+          <input
+            type="email"
+            name="email"
+            placeholder="E-post"
+            autocomplete="email"
+            required
+          />
+        </label>
+
+        <label>
+            Datum
+            <input type="date" name="visit-date" />
+        </label>
+
+        <label>
+          Typ av mat
+          <select id="subject" name="subject">
+            <option value="" disabled selected>Välj...</option>
+            <option value="grilled">Grillat</option>
+            <option value="vegetarian">Vegetariskt</option>
+            <option value="thai">Thai</option>
+            <option value="sushi">Sushi</option>
+            <option value="lchf">LCHF</option>
+            <option value="seafood">Skaldjur</option>
+          </select>
+        </label>
+
+        <label>
+            Hur många gäster?
+            <input type="range" name="guests" min="0" max="10" list="nr-guests">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+                <option value="7"></option>
+                <option value="8"></option>
+                <option value="9"></option>
+                <option value="10"></option>
+            </input>
+
+            <datalist id="nr-guests">
+                <option value="0">0</option>
+                <option value="2">2</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="10">10</option>
+            </datalist>
+        </label>
+
+        <fieldset>
+            <legend>Allergier</legend>
+            <label>
+                <input type="checkbox" name="">
+                Gluten
+            </label>
+            <label>
+                <input type="checkbox" name="">
+                Nötter
+            </label>
+            <label>
+                <input type="checkbox" name="">
+                Laktos
+            </label>
+            <label>
+                <input type="checkbox" name="">
+                Ägg
+            </label>
+            <label>
+                <input type="checkbox" name="">
+                Soja
+            </label>
+        </fieldset>
+
+        <label>
+          Övrigt
+          <textarea id="general" name="general" rows="5"></textarea>
+        </label>
+
+        <button type="submit">Skicka</button>
+      </form>
+    </dialog>
 </body>
 
 </html>
