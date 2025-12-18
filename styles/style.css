@@ -64,23 +64,21 @@ h2 {
   }
 
   .navbar-links {
-    flex-grow: 1;
     display: flex;
     justify-content: center;
     gap: 3rem;
+    flex-wrap: wrap;
+
 
     .navbar-item a {
         text-decoration: none;
+        color: var(--login-brown);
+        font-weight: bold;
     }
 
     .navbar-item:hover a {
         text-decoration: underline solid 0.1rem;
     }
-  }
-
-  .navbar-item a {
-    color: var(--login-brown);
-    font-weight: bold;
   }
 
   .navbar-login a {
@@ -91,6 +89,12 @@ h2 {
     text-decoration: none;
     border-radius: 8px;
   }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: center;
+      padding-block: 1rem;
+    }
 }
 
 .main {

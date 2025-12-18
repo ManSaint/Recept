@@ -29,7 +29,7 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main id="main" class="main">
       <img src="/pics/pic1.jpg" class="hero" alt="Pannkaka med hallon" />
 
       <article class="grid">
@@ -87,25 +87,25 @@
         </a>
       </article>
     </main>
-  <dialog class="dialog" id="viewModal">
+  <dialog class="dialog" id="viewModal" aria-labelledby="modal-title">
     <div class="modal-top">
-      <h2>Hoteyhoo</h2>
-      <button
+      <h2 id="modal-title">Hoteyhoo</h2>
+      <button class="btn"
         type="button"
         onclick="document.getElementById('viewModal').close()"
-        aria-label="Stäng"
+        aria-label="Stäng modal"
       >
         X
       </button>
     </div>
-      <form action="#" method="POST" class="form">
+      <form action="#" method="POST" class="form-group">
         <label>
           Namn
           <input
-            class="input-width"
+            class="form-input"
             type="text"
             name="name"
-            placeholder="Namn"
+            placeholder="Namn..."
             autocomplete="name"
             required
           />
@@ -114,10 +114,10 @@
         <label>
         E-post
           <input
-            class="input-width"
+            class="form-input"
             type="email"
             name="email"
-            placeholder="E-post"
+            placeholder="E-post..."
             autocomplete="email"
             required
           />
@@ -125,12 +125,12 @@
 
         <label>
             Datum
-            <input class="input-width" type="date" name="visit-date" />
+            <input class="form-input" type="date" name="visit-date" />
         </label>
 
         <label>
           Typ av mat
-          <select class="input-width" name="foodType">
+          <select class="form-input" name="foodType">
             <option value="" disabled selected>Välj...</option>
             <option value="grilled">Grillat</option>
             <option value="vegetarian">Vegetariskt</option>
@@ -143,7 +143,7 @@
 
         <label>
             Hur många gäster?
-            <input class="input-width" type="range" name="guests" min="0" max="10" list="nr-guests">
+            <input class="form-input" type="range" name="guests" min="0" max="10" list="nr-guests">
             </input>
 
             <datalist id="nr-guests">
@@ -186,10 +186,10 @@
 
         <label>
           Övrigt
-          <textarea class="input-width" id="general" name="general" rows="4"></textarea>
+          <textarea class="form-input" id="general" name="general" rows="4"></textarea>
         </label>
 
-        <button type="submit">Skicka</button>
+        <button class="btn" type="submit">Skicka</button>
       </form>
     </dialog>
   </body>
