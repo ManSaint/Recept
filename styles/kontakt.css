@@ -73,3 +73,7 @@ legend {
 input[type="range"], input[type="checkbox"] {
   accent-color: var(--brand-red);
 }
+
+.textarea {
+  resize: vertical;
+}
